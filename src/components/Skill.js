@@ -1,5 +1,7 @@
 export default function Skill(){
     return(
+        <div className="daddy" style={{display:"flex", "margin-right":"10px", gap:"20px"}}>
+
         <ul className="skill">
             <li className="lang">
                 Languages
@@ -11,7 +13,22 @@ export default function Skill(){
                     <li>C++</li>
                 </ul>
             </li>
-            <li className="framework">
+
+            <li className="technical" >
+                Technical
+                <ul className="lightFont listStyleType">
+                    <li>Data Structures & Algorithms</li>
+                    <li>OOPs</li>
+                    <li>Operating Systems</li>
+                </ul>
+            </li>
+            
+          
+            
+        </ul>
+        
+        <ul className="skill2">
+        <li className="framework">
                 Frameworks
                 <ul className="lightFont listStyleType">
                     <li>React</li>
@@ -27,8 +44,8 @@ export default function Skill(){
                     <li>Photoshop</li>
                 </ul>
             </li>
-
+            
         </ul>
-
+    </div>
     )
 }
