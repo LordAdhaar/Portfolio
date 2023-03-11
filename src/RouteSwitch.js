@@ -8,7 +8,7 @@ import Contact from "./components/Contact"
 
 export default function RouteSwitch(){
     return(
-        <BrowserRouter>
+        <HashRouter>
             <Nav />
             <Routes>
                 <Route path="/" element={<Home/>} />
@@ -16,6 +16,6 @@ export default function RouteSwitch(){
                 <Route path="/Skill" element={<Skill />} />
                 <Route path="/Contact" element={<Contact/>}  />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
