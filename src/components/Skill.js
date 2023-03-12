@@ -1,6 +1,6 @@
 export default function Skill(){
     return(
-        <div className="daddy" style={{display:"flex", "margin-right":"10px", gap:"20px"}}>
+        <div className="daddy" style={{display:"flex", "margin-right":"25px", gap:"20px"}}>
 
         <ul className="skill">
             <li className="lang">

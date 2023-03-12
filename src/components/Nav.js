@@ -2,6 +2,23 @@ import {Link} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 export default function Nav(){
+
+    function underActive(e){
+        console.log(e);
+        console.log(e.target);
+        console.log(e.target.parentElement.parentElement);
+        const listItems = document.querySelectorAll(".navUl li");
+        
+        for(let listItem of listItems){
+            console.log(listItem);
+            if(listItem.classList.contains("underActive")){
+                listItem.classList.remove("underActive");
+            }
+        }
+
+        e.target.classList.add("underActive");
+    }
+
     return (
         <nav className="navBar">
             <div className="aboutMe">
@@ -10,16 +27,16 @@ export default function Nav(){
             </div>
             <ul className="navUl">
                 <Link to="/">
-                    <li className="me">About Me</li>
+                    <li className="me" onClick={underActive}>About Me</li>
                 </Link>
                 <Link to="/Projects">
-                    <li>Projects</li>
+                    <li className="pro" onClick={underActive}>Projects</li>
                 </Link>
                 <Link to="/Skill">
-                    <li>Skills</li>
+                    <li className="ski" onClick={underActive}>Skills</li>
                 </Link>
                 <Link to="/Contact">
-                    <li>Contact</li>
+                    <li className="con" onClick={underActive}>Contact</li>
                 </Link>
             </ul>
         </nav>
