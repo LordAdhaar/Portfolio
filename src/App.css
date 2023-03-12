@@ -42,6 +42,8 @@ body {
   border: .1px solid;
 
   width: 100%;
+
+  position: relative;
 }
 
 
@@ -89,12 +91,6 @@ body {
   display: flex;
   align-items: flex-end;
   font-family: newMontReg;
-}
-
-.home{
-  width: 110px;
-  text-align: left;
-  animation: 1s ease-in changeOpacity ;
 }
 
 .projects{
@@ -257,4 +253,43 @@ ul.contact a{
 .con.underActive:before{
   opacity: 1;
   transform: translateX(0px) ;
+}
+
+.home{
+  width: 110px;
+  text-align: left;
+  animation: 1s ease-in changeOpacity ;
+}
+.blob{
+  position: absolute;;
+  height: 200px;
+  aspect-ratio: 1;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, white, black);
+  animation: rotate 10s infinite ;
+  filter: blur(200px);
+  z-index: -1;
+}
+
+.blur{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  backdrop-filter: blur(200px);
+}
+
+@keyframes rotate {
+  from{
+    rotate: 0deg;
+  }
+  to{
+    
+    rotate: 360deg;
+  }
 }
