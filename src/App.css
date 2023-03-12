@@ -120,6 +120,12 @@ ul.contact{
   transform: scale(0.85);
 }
 
+ul.contact a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 ul.contact li:first-child{
   opacity: 0;
   animation: 2s cubic-bezier(0.4, 0, 0.2, 1)  changeOpacity infinite alternate;
