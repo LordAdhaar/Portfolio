@@ -33,7 +33,6 @@ export default function Skill(){
                 <ul className="lightFont listStyleType">
                     <li>React</li>
                     <li>Firebase</li>
-                    <li>Tailwind</li>
                 </ul>
             </li>
             <li className="tools">
