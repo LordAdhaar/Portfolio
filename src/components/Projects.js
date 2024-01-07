@@ -23,15 +23,15 @@ export default function Projects(){
                 <a href="https://lordadhaar.github.io/shopping-cart/" target="_blank">E-commerce Website <FiArrowUpRight/></a> 
                 <ul className="desc0">
                     <li>E-commerce website to buy anime merchandise</li>
-                    <li>React + Firebase</li>
+                    <li>React + Firebase + HTML + CSS</li>
                 </ul>
             </li>
             
             <li onMouseEnter={()=>{active("desc1")}} onMouseLeave={()=>{deActivate("desc1")}}>
-                <a href="https://lordadhaar.github.io/To-Do-List" target="_blank" >To-Do-List <FiArrowUpRight/></a>
+                <a href="https://github.com/LordAdhaar/DST-RiseIn" target="_blank" >Decentralized Cloud Storage<FiArrowUpRight/></a>
                 <ul className="desc1">
-                    <li>To-Do-List with CRUD functionality</li>
-                    <li>JavaScript + Github + HTML + CSS</li>
+                    <li>Decentralized cloud storage service on the blockchain</li>
+                    <li>React + Ethers.js + Pinata + HTML + CSS</li>
                 </ul>
             </li>
             
@@ -48,15 +48,15 @@ export default function Projects(){
                 <a href="https://lordadhaar.github.io/Weather-App/" target="_blank" >Weather App <FiArrowUpRight/></a>
                 <ul className="desc3">
                     <li>Weather App made using OpenWeatherMap API </li>
-                    <li>JavaScript + API + CSS</li>
+                    <li>JavaScript + API + HTML + CSS</li>
                 </ul>
             </li>
             
-            <li onMouseEnter={()=>{active("desc4")}}  onMouseLeave={()=>{deActivate("desc4")}}>
-                <a href="https://lordadhaar.github.io/Etch-A-Sketch/" target="_blank">Etch-A-Sketch <FiArrowUpRight/></a>
+            <li className="hide" onMouseEnter={()=>{active("desc4")}}  onMouseLeave={()=>{deActivate("desc4")}}>
+                <a href="https://lordadhaar.github.io/To-Do-List" target="_blank">To-Do-List<FiArrowUpRight/></a>
                 <ul className="desc4">
-                    <li>JavaScript Drawing Board</li>
-                    <li>VanillaJs + HTML + CSS</li>
+                    <li>To-Do-List with CRUD functionality</li>
+                    <li>JavaScript + Github + HTML + CSS</li>
                 </ul>
             </li>
         </ul>

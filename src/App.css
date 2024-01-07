@@ -166,7 +166,7 @@ ul.contact li:first-child+li+li+li{
 ul.projects{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  justify-items: start;
   list-style-type: none;
   padding-left: 0px;
 
@@ -258,7 +258,7 @@ ul.contact a{
 }
 
 .home{
-  width: 110px;
+  width: 130px;
   text-align: left;
   animation: 1s ease-in changeOpacity ;
 }
@@ -308,7 +308,52 @@ ul.contact a{
     justify-items: start;
   }
 
-  ul.projects li:last-child{
+  ul.projects .hide{
     display: none;
   }
+
+  ul.contact{
+    display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: start;
+  }
+
+  .contactBrah{
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}
+
+.contactBrah{
+  display: flex;
+  font-family: newMontreal;
+}
+
+.contactDiv, .contactForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:25px
+}
+
+
+.contactForm input, .contactForm textarea{
+  font-family: newMontreal;
+  font-weight: bolder;
+  background: #0d0d0d;
+  border:0px;
+  padding: 5px 0px;
+  border-bottom: 1px solid white;
+  padding: 5px 0px;
+  color: white;
+  font-size: 15px;
+}
+
+.contactForm .submit{
+  border: 1px solid white;
+  border-radius:40px;
+  font-weight: bolder;
+
+  font-family: newMontreal;
 }
