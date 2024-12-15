@@ -46,7 +46,7 @@ export default function Projects() {
             <li onMouseEnter={() => { active("desc3") }} onMouseLeave={() => { deActivate("desc3") }}>
                 <a href="https://github.com/LordAdhaar/Ethernaut-Solutions" target="_blank">Ethernaut <FiArrowUpRight /></a>
                 <ul className="desc3">
-                    <li>Solution to Ethernaut CTF challenges using foundry scripts </li>
+                    <li>Solutions to Ethernaut CTF challenges using foundry scripts </li>
                     <br />
                     <li>Tools: Solidity, Foundry, Ethers.js</li>
                 </ul>
