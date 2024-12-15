@@ -1,8 +1,8 @@
-export default function Home(){
-    return(
-        <div className="home"> 
+export default function Home() {
+    return (
+        <div className="home">
             <p>
-                Front-End Engineer with heavy focus on UI/UX design and building on Web3 using blockchain technologies. 
+                Smart contract developer and security researcher on a mission to create and secure smart contracts.
             </p>
         </div>
     )
